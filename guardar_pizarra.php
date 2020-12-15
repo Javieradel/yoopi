@@ -14,13 +14,13 @@ $data['data']= json_encode($data['data']);
 
 $identificadorImagen='thumbs/creaciones/'.$_SESSION['ID'].'-'.$_SESSION['id_creacion'].'-'.$_SESSION['NICK'].'.gif';
 try{
-    $statament = $_conexion->prepare('UPDATE creaciones  SET DATA = :DATA WHERE ID = :id');
+    $statament = $_conexion->prepare('UPDATE craft  SET `data` = :DATA WHERE `id-craft` = :id');
     $statament->execute(array(":DATA"=>$data['data'],':id'=>$_SESSION['id_creacion']));
-    
+
     echo json_encode($arr['registo']="ok");
     $data['data']= json_decode($data['data']);
     generarImagen($identificadorImagen,$_SESSION['creacion-actual']['_dimension'],$data['data']);
-    $rutaImagen= $_conexion->prepare('UPDATE creaciones SET THUMB = :ruta WHERE ID = :id');
+    $rutaImagen= $_conexion->prepare('UPDATE craft SET thumb = :ruta WHERE `id-craft` = :id');
     $rutaImagen->execute(array(':ruta'=>$identificadorImagen,':id'=>$_SESSION['id_creacion']));
     }catch(PDOException $e){
         echo "Error:".$e->getMessage();

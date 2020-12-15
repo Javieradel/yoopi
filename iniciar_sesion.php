@@ -25,9 +25,9 @@
 			<span>Bienvenido a Yoopi!!!</span>
 			<form name="inicio" method="post" class="Formulario" ">
 				
-				<input id="usuario" type="text"  placeholder="Nombre"name="Usuario" required>
+				<input id="usuario" type="text"  placeholder="Nombre"  name="Usuario" required>
 				</br>
-				<input id="pass"type="password" placeholder="Contraseña"name="Key" required></br>
+				<input id="pass" type="password" placeholder="Contraseña" name="Key" required></br>
 				<section class="alertas">
 					
 				</section>

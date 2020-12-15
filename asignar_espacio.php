@@ -21,8 +21,10 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
 
     $_conexion = new PDO('mysql:host=localhost; dbname=yoopi','root','',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
     try{
-        $statament = $_conexion->prepare('INSERT INTO creaciones VALUES (null,:AUTHOR,:TITLE,:DESCRIPTION, :SIZE, :DATA,NOW(),0,"")');
-        $statament->execute(array(':AUTHOR'=>$_SESSION['NICK'],':TITLE'=>$data['_titulo'],":DESCRIPTION"=>$data['_description'],":SIZE"=>$data['_dimension'],":DATA"=>''));
+        $statament = $_conexion->prepare('INSERT INTO craft VALUES (null,:AUTHOR,:TITLE,:DESCRIPTION, :SIZE, :DATA,NOW(),:thumb)');
+#        $statament = $_conexion->prepare('INSERT INTO creaciones VALUES (null,:AUTHOR,:TITLE,:DESCRIPTION, :SIZE, :DATA,NOW(),0,"")');
+
+        $statament->execute(array(':AUTHOR'=>$_SESSION['NICK'],':TITLE'=>$data['_titulo'],":DESCRIPTION"=>$data['_description'],":SIZE"=>$data['_dimension'],":DATA"=>'',':thumb'=>'empty'));
         $_SESSION['id_creacion']= $_conexion->lastInsertId();
     }catch(PDOException $e){
         echo "Error:".$e->getMessage();
@@ -30,7 +32,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
     $_SESSION['creacion-actual']= $data;
     $sms['estado']='ok';
     echo json_encode($sms);
-   
+
 }
 }elseif ($_SERVER['REQUEST_METHOD']=='GET'){
     //mandar datos a nueva pizarra

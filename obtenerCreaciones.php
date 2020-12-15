@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD']== 'GET'){
     $data['key']=trim(filter_var($data['_titulo'],FILTER_SANITIZE_STRING));
     $_conexion = new PDO('mysql:host=localhost; dbname=yoopi','root','',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
     try{
-        $statament = $_conexion->prepare('SELECT * FROM creaciones WHERE AUTHOR=:author');
+        $statament = $_conexion->prepare('SELECT * FROM craft WHERE `author`=:author');
         $statament->execute(array(':author'=>$_SESSION['NICK']));
         $busqueda= $statament->fetchAll();
         echo json_encode($busqueda);

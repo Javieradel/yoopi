@@ -10,16 +10,16 @@ $_sms=array();
 $_nombre=trim(filter_var($data['_nombre'],FILTER_SANITIZE_STRING));
 if(empty($_nombre)){
         $_sms["sms_user"]=3;
-            
+
     }else{
         try{
-        $statament = $_conexion->prepare('SELECT * from usuarios WHERE NOMBRE =:nombre limiT 1');
+        $statament = $_conexion->prepare('SELECT * from users WHERE `name` =:nombre limiT 1');
         $statament->execute(array(':nombre'=>$_nombre));
         $busqueda = $statament->fetch();
         if ($busqueda!= false){
             $_sms["sms_user"]=0;
         }else{
-            
+
             $_sms["sms_user"]="";
 
         }
@@ -29,12 +29,12 @@ if(empty($_nombre)){
     }
 
 // validar email y comprobar uso
-$_email = trim(filter_var($data['_email'],FILTER_SANITIZE_EMAIL)); 
+$_email = trim(filter_var($data['_email'],FILTER_SANITIZE_EMAIL));
 if(empty($_email)){
         $_sms["sms_email"]=0;
     }else{
         try{
-            $statament = $_conexion->prepare('SELECT * from usuarios WHERE EMAIL =:email limiT 1');
+            $statament = $_conexion->prepare('SELECT * from users WHERE `email` =:email limiT 1');
             $statament->execute(array(':email'=>$_email));
             $busqueda = $statament->fetch();
             if ($busqueda!= false){
@@ -49,10 +49,10 @@ if(empty($_email)){
 
 //encriptar  password
  $_password= hash('sha512',$data['_password']);
- 
+
  if(($_sms['sms_email'] && $_sms['sms_user'])== ''){
     try{
-        $statament = $_conexion->prepare('INSERT INTO usuarios VALUES(null,:nombre,null,:email,:password)');
+        $statament = $_conexion->prepare('INSERT INTO users  VALUES (null,:nombre,:email,:password,"")');
         $statament->execute(array(':nombre' => $_nombre,'email'=>$_email,':password'=> $_password));
         $_sms['registro']='OK';
         echo json_encode($_sms);

@@ -15,7 +15,7 @@ if(empty($_nombre) || empty($_pass)){
         
 }else{
     try{
-    $statament = $_conexion->prepare('SELECT ID, NOMBRE, NICK, PASSWORD from usuarios WHERE NOMBRE =:nombre limiT 1');
+    $statament = $_conexion->prepare('SELECT `id-users`, `name`, `email`, `password` from users WHERE `name` =:nombre limiT 1');
     $statament->execute(array(':nombre'=>$_nombre));
     $busqueda = $statament->fetch();
     if ($busqueda== false){
@@ -23,12 +23,12 @@ if(empty($_nombre) || empty($_pass)){
         echo  json_encode($_sms);
 
     }else{
-        
-        if($busqueda['PASSWORD']==$_pass){
-        
-            $_SESSION['ID']=$busqueda['ID'];
-            $_SESSION['NOMBRE']=$busqueda['NOMBRE'];
-            $_SESSION['NICK']=$busqueda['NICK'];
+
+        if($busqueda['password']==$_pass){
+
+            $_SESSION['ID']=$busqueda['id-users'];
+            $_SESSION['NOMBRE']=$busqueda['name'];
+            $_SESSION['NICK']=$busqueda['email'];
             $_sms['url']="personal_page.php";
             echo json_encode($_sms);
         }else{
