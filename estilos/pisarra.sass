@@ -1,0 +1,157 @@
+//background 1 #103311 - 2 lineal-gradient(0deg,#103311,#144216,#3e3f3e)
+//color:#3a2a2a;
+//	background:#45d848 ;
+// menus #eff1e5;
+	//font family verdana
+$verde_yoopi:#45d848
+$degradado:lineal-gradient(0deg,#103311,#144216,#3e3f3e)
+$menus:#eff1e5
+$talla_fuente:16px
+*
+	padding: 0
+	margin: 0
+	-webkit-box-sizing:border-box
+	-moz-box-sizing:border-box
+	box-sizing:border-box
+body
+	background: $menus
+	text-align: center
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+header
+	width: 100%
+	margin: auto
+	text-align: center
+	color: #3a2a2a
+	background: #45d848 
+	padding: 5px 0px 
+	font-family: Verdana
+	font-size: 16px
+	border-bottom: 2px solid rgba(0,0,0,.4)
+div.app
+	display: flex
+	align-items: stretch
+
+aside
+	width: 15%
+	background-color: $menus
+	text-align: center
+	font-size: $talla_fuente +2
+	padding-bottom: 25px
+	
+	border-right: 2px solid	rgba(0,0,0,.4)
+	div.wrapper_portada
+		width: 100%
+		height: 100px
+		background-color: rgba(106, 189, 145, 0.87)
+		max-height: 100px
+	picture.usuario
+		img
+			width: 65%
+			border-radius: 100%
+			margin-top: -40px
+			border: 5px solid rgba(255, 255, 255, 0.7)
+			max-width: 80px
+		img:hover
+			border: 5px solid $verde_yoopi
+		
+	.menu
+		text-align: left
+		margin-top: 15%
+		padding: 0 9px 0 15px
+		div
+			width: 70%
+			margin: 10px auto
+			font-size: inherit
+			border-bottom: 2px solid rgba(0,0,0,.2)
+			padding: 5px
+			li.fas
+				font-size: 24px
+				margin-right: 5px
+			
+				
+		div:hover
+			background: rgba(0,0,0,.1)
+			border-radius: 10px
+			border-bottom: 2px solid transparent
+			li.fas
+			color: #9e0017
+
+
+		footer
+			margin-top: 60%
+			text-align: center
+			a
+				font-size: $talla_fuente
+				border-radius: 8px
+				padding: 5px
+				font-family: Verdana
+				text-decoration: none
+				display: inline-block
+				margin: auto 5%
+				margin-bottom: 8px
+			a:hover
+				background: rgba(0,0,0,.2)
+li.fas
+	width: 20%
+	
+
+table
+	text-align: center
+	border: 2px solid black
+	background: #FFF
+	margin: 2% auto
+	border-collapse: collapse
+	.pixel
+		width: 10px
+		height: 10px
+		border: 1px solid rgba(0,0,0,.1)
+		
+	section.screen
+		width: 70%
+		margin: 4% auto 
+		
+				
+	
+#paleta
+	width: 18%
+	border-left: 2px solid	rgba(0,0,0,.4)
+	display: flex
+	flex-flow: column nowrap
+	font-size: 20px 
+	.monitor
+		min-height: 40px
+		background: black
+		width: 20%
+		border: 2px solid rgba(0,0,0,.2)
+		margin: 2% auto
+		border-radius: 15px
+	.colores
+		display: flex
+		flex-direction: row
+		width: 98%
+		margin: 5% auto
+		padding-bottom: 10%
+		flex-wrap: wrap
+		justify-content: center
+		border-bottom: 2px solid rgba(0,0,0,.4)
+		.fila_paleta
+			width: 25%
+			text-align: center
+		.muestra
+			margin: 15% auto
+			width: 50%
+			height: 25px
+			border: 1px solid rgba(0,0,0,.2)
+			border-radius: 100%
+	div.caja-botones
+			background-color: #e6e6e6
+			div.btn
+				width: 20%
+				li.fas
+					font-size: 30px
+			div.btn:hover
+				padding: 1.5px 1px
+				li.fas
+					font-size: 26px
+					
+					color: #9e0017

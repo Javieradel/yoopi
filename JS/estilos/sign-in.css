@@ -1,0 +1,143 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	background:#103311;
+	background: linear-gradient(0deg,#103311,#144216,#3e3f3e);
+
+	/* #3e3f3e;*/
+}
+header{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	color:#3a2a2a;
+	background:#45d848 ;
+	/*border-radius: 0px 0px 20px 20px;*/
+	padding: 5px 0px;
+	font-family: Verdana;
+	font-size: 16px;
+	border-bottom: 4px solid rgba(0,0,0,.4);
+	/*box-shadow: 0px 2px 10px #3a2a2a;*/
+}
+main {
+	
+	text-align: center;
+	background: #eff1e5;
+	width: 40%;
+	margin:25px auto;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
+main span{
+	display: inline-block;
+	margin-top: 5%;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: bold;
+}
+picture img {
+	width: 35%;
+	
+}
+input[type="text"],input[type="password"],input[type="email"]{
+	font-size: 20px;
+	width: 80%;
+	
+	margin: 15px auto;
+	padding: 20px;
+	border:1px solid #fff ;
+	border-radius: 0px 20px 20px 20px;
+
+}
+form{
+	margin:6% auto;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus{
+	border:3px solid #acdead;
+	border-radius: 8px;
+	box-shadow: none;
+	
+	outline: none;
+	padding: 18px;
+	
+}
+input[type="text"]:hover,
+input[type="password"]:hover,input[type="email"]:hover{
+	border:3px solid #acdead;
+	border-radius: 8px;
+	box-shadow: none;
+	outline: none;
+	padding:18px;
+	
+}
+input[type="button"]{
+	width: 50%;
+	padding: 15px 8px;
+	margin-top: 15%;
+	background: #43ab45;
+	border:2px solid transparent;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+input[type="button"]:hover{
+	width: 48%;
+	padding: 15px 8px;
+	background: #43ab45;
+	border: 2px solid rgba(0,0,0,.2);
+	border-radius: 08px;
+	
+}
+
+footer {
+	background: #eff1e5;
+	padding: 20px 20px;
+	text-align: center;
+
+}
+footer a{
+	border-radius: 5px;
+	padding: 10px;
+	font-family: Verdana;
+	text-decoration: none;
+	display: inline-block;
+	margin:auto 5%;
+	margin-bottom: 8px;
+}
+footer a:hover{
+	background: rgba(0,0,0,.2);
+}
+
+
+
+section.alertas{
+	text-align: left;
+	color: #3a2a2a;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	width: 60%;
+	border-radius: 5px;
+	margin: 0px auto;
+	padding: 15px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.sms-sign{
+	font-family: Verdana, sans-serif;
+}
+.sms-sign a{ 
+	font-weight: bold;
+	text-decoration: none;
+}

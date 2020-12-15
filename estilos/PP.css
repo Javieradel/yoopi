@@ -1,0 +1,101 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	text-align: center;
+	background: #fafff4;
+}
+
+.contededor{
+	width: 100%;
+		margin: auto;
+		text-align: center;
+		color:#3a2a2a;
+		background:#45d848 ;
+		/*border-radius: 0px 0px 20px 20px;*/
+		padding: 5px 0px;
+		font-family: Verdana;
+		font-size: 16px;
+		border-bottom: 2px solid rgba(0,0,0,.4);
+		/*box-shadow: 0px 2px 10px #3a2a2a;*/
+	}
+.header{
+	min-height: 200px;;
+	background:rgba(106, 189, 145, 0.87);}
+	
+.contenedor1 img.portada{
+	overflow: visible;	
+	background: rgba(106, 189, 145, 0.87);
+	width: 100%;
+	max-height: 200px;;
+	
+}
+.contenedor1{
+	margin:  1% 0px;
+	overflow: visible;
+}
+div.contededor1{
+	overflow: visible;
+}
+.contenedor1 img.foto {
+	width: 150px;
+	margin-top:-7%;
+	border: 5px solid rgba(255, 255, 255, 0.7);
+	border-radius: 100%;
+	
+}
+div.inf{
+	display: flex;
+	align-content: space-around;
+}
+.inf-personal{
+	min-width: 30%;
+}
+
+
+
+.contenido-personal{
+	min-width: 65%;
+	
+}
+div.thumb{
+	max-height: 400px;
+	overflow: hidden;
+	
+	border-radius: 5px;
+}
+div.thumb img{
+	border-radius: 5px;
+	margin: 5px;
+	width: 98%;
+	height: 50%;
+	
+}
+article.articulo {
+	background-color: #45d848;
+	width: 50%;
+	
+}
+
+.titulo-art{
+	font-size: 25px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 10px 0px 10px 0px;
+
+}
+.description{
+	font-size:18px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom: 10px;
+}
+nav{
+	display: flex;
+	align-content: space-around;
+}
+div{
+	margin: 10px auto;
+}
