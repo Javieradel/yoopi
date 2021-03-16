@@ -50,28 +50,26 @@
 			
 			</main>
 			<section class="screen">
-				<picture class="mostrador">
-
-
-
-				<h4 class="title">Lorem Ipsum</h4>
 				<img src="imagenes/void.png" alt="thumb" >
+
+				<h4 class="title-craft">Lorem Ipsum</h4>
+
+				<header class="user">
+					<picture>
+						<img src="imagenes/void.png" alt="">
+					</picture>
+					<article class="iden">
+						<span class="user-name">
+							Lorem Ipsum
+						</span>
+					</article>
+				</header>
 
 				<p class="description">
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consequuntur et dolore suscipit cumque commodi culpa ratione volupta
 				</p>
-				</picture>
 				</section>
-				<section class="lista">
-					<img src="imagenes/void.png" alt="thumb" class="thumb">
-					<img src="imagenes/void.png" alt="thumb" class="thumb">
-					<img src="imagenes/void.png" alt="thumb" class="thumb">
-					<img src="imagenes/void.png" alt="thumb" class="thumb">
-					<img src="imagenes/void.png" alt="thumb" class="thumb">
-					<img src="imagenes/void.png" alt="thumb" class="thumb">
-					<div class="btn">Atras</div>
-					<div class="btn">Siguiente</div>
-			</section>
+
 		</main>
 		<aside class="contactos">
 		<?php
