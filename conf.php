@@ -3,12 +3,16 @@
      *  Conf DB yoopi
      */
         #usuario
-        define('userDB','root');
+        $userDB='root');
         #password
-        define('passDB','');
+        $passDB'dbkey';
         #DBname
-        define('nameDB','yoopi');
+        $nameDB='yoopi';
+        #define('nameDB','yoopi');
         #host
-        define('hostDB','localhost');
+        $hostDB='localhost';
+        #define('hostDB','localhost');
         
+        #db
+        $DB= Pnew PDO("mysql:host=$hostDB; dbname=$nameDB",$userDB,$passDB,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 ?>
