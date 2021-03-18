@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/main.css">
     <title>Yoopi | Unete</title>
@@ -26,15 +28,43 @@
             </nav>
         </header>
 
-        
-        <picture>
-            <img src="imagenes/portada.main.1.jpg" alt="portada">
-        </picture>
         <main>
-            <section class="poster">
-                <h2>DIVIERTETE</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt totam ratione magnam numquam in nihil quis molestiae officiis assumenda eius! Similique accusamus voluptates expedita autem, distinctio sapiente sint aliquid placeat!</p>
+            <section class="intro">
+                <div class="degrad">
+
+                    <div class="dialog">
+                        <h1><span class="emphasis-green">Dibuja</span> fácil</h1>
+                        <p>
+                            Yoopi te permite crear dibujos coloreando espacios existentes para mostrar al mundo tu obra maestra.
+                        </p>
+                    </div>
+                </div>
+
             </section>
+            <section class="wraper">
+                <ul class="carousel">
+                    <li class="item-carousel">
+                        <article class="poster">
+                            <h2>DIVIERTETE</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt totam ratione magnam numquam in nihil quis molestiae officiis assumenda eius! Similique accusamus voluptates expedita autem, distinctio sapiente sint aliquid placeat!</p>
+                        </article>
+                    </li>
+                    <li class="item-carousel">
+                        <article class="poster">
+                            <h2>EXPLORA</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt totam ratione magnam numquam in nihil quis molestiae officiis assumenda eius! Similique accusamus voluptates expedita autem, distinctio sapiente sint aliquid placeat!</p>
+                        </article>
+                    </li>
+                    <li class="item-carousel">
+                        <article class="poster">
+                            <h2>CRECE</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt totam ratione magnam numquam in nihil quis molestiae officiis assumenda eius! Similique accusamus voluptates expedita autem, distinctio sapiente sint aliquid placeat!</p>
+                        </article>
+                    </li>
+                    
+                </ul>    
+            </section>
+           
             <section class="poster">
                 <h2>EXPLORA</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt totam ratione magnam numquam in nihil quis molestiae officiis assumenda eius! Similique accusamus voluptates expedita autem, distinctio sapiente sint aliquid placeat!</p>
@@ -42,10 +72,7 @@
             <section class="poster"><h2>CRECE</h2> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt totam ratione magnam numquam in nihil quis molestiae officiis assumenda eius! Similique accusamus voluptates expedita autem, distinctio sapiente sint aliquid placeat!</p>
             </section>
         </main>
-        <nav>
-            <a href="sign_in.php"><button>REGISTRATE</button></a>
-            <a href="iniciar_sesion.php"><button>ENTRAR</button></a>
-        </nav>
+     i
         <footer>
 			<a href="#">Yoopi &copy;</a> 
 			<a href="#">Inicio</a>

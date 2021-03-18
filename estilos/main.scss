@@ -2,10 +2,12 @@ $black-gray: #3e3f3e;
 $black-green: #144216;
 $green-shine: #45d848;
 $green-brand: #009f3c;
+$white-dialog: #eff1e5;
 body {
     background: $black-gray;
     font-size: 20px;
     color: white;
+    font-family: 'Roboto', sans-serif;
     /* background: linear-gradient(0deg, #103311, #144216, #3e3f3e); */
     .header-main {
         width: 100%;
@@ -38,6 +40,44 @@ body {
             }
         }
     }
+    main {
+        .intro {
+            background-size: cover;
+            width: 100%;
+            min-height: 350px;
+            background-image: url('../imagenes/portada-x.jpg');
+            .degrad {
+                padding-top: 10%;
+                background-image: linear-gradient(0deg, rgba($black-gray, 1) 0%, rgba($black-gray, .7) 10%, rgba($black-green, 0) 100%);
+                min-height: 350px;
+                .dialog {
+                    width: 40%;
+                    background-color: rgba($white-dialog, .7);
+                    border-radius: 15px;
+                    min-height: 160px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 20px 15px;
+                    h1 {
+                        text-align: left;
+                        font-size: 32px;
+                        color: black;
+                        font-weight: bold;
+                        margin-bottom: 25px;
+                    }
+                    p {
+                        color: $black-gray;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.emphasis-green {
+    color: $green-brand;
 }
 
 .btn {

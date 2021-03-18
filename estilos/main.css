@@ -2,6 +2,7 @@ body {
   background: #3e3f3e;
   font-size: 20px;
   color: white;
+  font-family: "Roboto", sans-serif;
   /* background: linear-gradient(0deg, #103311, #144216, #3e3f3e); */
 }
 body .header-main {
@@ -33,6 +34,42 @@ body .header-main .header-options li {
 body .header-main .header-options li a {
   text-decoration: none;
   color: white;
+}
+body main .intro {
+  background-size: cover;
+  width: 100%;
+  min-height: 350px;
+  background-image: url("../imagenes/portada-x.jpg");
+}
+body main .intro .degrad {
+  padding-top: 10%;
+  background-image: linear-gradient(0deg, #3e3f3e 0%, rgba(62, 63, 62, 0.7) 10%, rgba(20, 66, 22, 0) 100%);
+  min-height: 350px;
+}
+body main .intro .degrad .dialog {
+  width: 40%;
+  background-color: rgba(239, 241, 229, 0.7);
+  border-radius: 15px;
+  min-height: 160px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 15px;
+}
+body main .intro .degrad .dialog h1 {
+  text-align: left;
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+body main .intro .degrad .dialog p {
+  color: #3e3f3e;
+  text-align: left;
+}
+
+.emphasis-green {
+  color: #009f3c;
 }
 
 .btn {
