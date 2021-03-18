@@ -1,0 +1,90 @@
+$black-gray: #3e3f3e;
+$black-green: #144216;
+$green-shine: #45d848;
+$green-brand: #009f3c;
+body {
+    background: $black-gray;
+    font-size: 20px;
+    color: white;
+    /* background: linear-gradient(0deg, #103311, #144216, #3e3f3e); */
+    .header-main {
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        background: $black-gray;
+        //padding: 0px 60px;
+        font-family: Verdana;
+        .h-degrad {
+            width: 20%;
+            background-image: linear-gradient(90deg, white 0%, rgba(white, .7) 75%, rgba(0, 0, 0, 0) 100%);
+            svg {
+                max-height: 55px;
+                max-width: 120px;
+            }
+        }
+        .header-options {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                width: 30%;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    display: block;
+    min-width: 20%;
+    border-radius: 30px;
+    padding: 8px 12px;
+    text-align: center;
+    background-color: $black-gray;
+    &:hover {
+        background-color: $black-green;
+    }
+    &:active {
+        background-color: $green-shine;
+        color: black !important;
+    }
+}
+
+.btn.btn-p {
+    background-color: $green-brand;
+    &:hover {
+        background-color: $black-green;
+    }
+    &:active {
+        background-color: $green-shine;
+        color: black !important;
+    }
+}
+
+footer {
+    margin: 10px auto 0px auto;
+    width: 100%;
+    background: #eff1e5;
+    padding: 20px 20px;
+    text-align: center
+}
+
+footer a {
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Verdana;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto 5%;
+    margin-bottom: 0px;
+}
+
+footer a:hover {
+    background: rgba(0, 0, 0, .2);
+}

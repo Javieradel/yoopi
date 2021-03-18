@@ -1,31 +1,74 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
 body {
-  background: #103311;
-  background: linear-gradient(0deg, #103311, #144216, #3e3f3e); }
-
-header {
+  background: #3e3f3e;
+  font-size: 20px;
+  color: white;
+  /* background: linear-gradient(0deg, #103311, #144216, #3e3f3e); */
+}
+body .header-main {
   width: 100%;
-  margin: auto;
-  text-align: center;
-  color: #3a2a2a;
-  background: #45d848;
-  /*border-radius: 0px 0px 20px 20px; */
-  padding: 5px 0px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background: #3e3f3e;
   font-family: Verdana;
-  font-size: 16px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-  /*box-shadow: 0px 2px 10px #3a2a2a; */ }
+}
+body .header-main .h-degrad {
+  width: 20%;
+  background-image: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0.7) 75%, rgba(0, 0, 0, 0) 100%);
+}
+body .header-main .h-degrad svg {
+  max-height: 55px;
+  max-width: 120px;
+}
+body .header-main .header-options {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header-main .header-options li {
+  width: 30%;
+  list-style: none;
+}
+body .header-main .header-options li a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  display: block;
+  min-width: 20%;
+  border-radius: 30px;
+  padding: 8px 12px;
+  text-align: center;
+  background-color: #3e3f3e;
+}
+.btn:hover {
+  background-color: #144216;
+}
+.btn:active {
+  background-color: #45d848;
+  color: black !important;
+}
+
+.btn.btn-p {
+  background-color: #009f3c;
+}
+.btn.btn-p:hover {
+  background-color: #144216;
+}
+.btn.btn-p:active {
+  background-color: #45d848;
+  color: black !important;
+}
 
 footer {
   margin: 10px auto 0px auto;
   width: 100%;
   background: #eff1e5;
   padding: 20px 20px;
-  text-align: center; }
+  text-align: center;
+}
 
 footer a {
   border-radius: 5px;
@@ -34,9 +77,11 @@ footer a {
   text-decoration: none;
   display: inline-block;
   margin: auto 5%;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 footer a:hover {
-  background: rgba(0, 0, 0, 0.2); }
+  background: rgba(0, 0, 0, 0.2);
+}
 
 /*# sourceMappingURL=main.css.map */
