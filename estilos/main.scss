@@ -1,8 +1,52 @@
 $black-gray: #3e3f3e;
+$black-red: #3a2a2a;
 $black-green: #144216;
 $green-shine: #45d848;
 $green-brand: #009f3c;
 $white-dialog: #eff1e5;
+.section {
+    padding: 30px 90px;
+}
+
+.h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+.emphasis-green {
+    color: $green-brand;
+}
+
+.btn {
+    display: block;
+    min-width: 20%;
+    border-radius: 30px;
+    padding: 8px 12px;
+    text-align: center;
+    background-color: $black-gray;
+    text-decoration: none;
+    color: white;
+    &:hover {
+        background-color: $black-green;
+    }
+    &:active {
+        background-color: $green-shine;
+        color: black !important;
+    }
+}
+
+.btn.btn-p {
+    background-color: $green-brand;
+    &:hover {
+        background-color: $black-green;
+    }
+    &:active {
+        background-color: $green-shine;
+        color: black !important;
+    }
+}
+
 body {
     background: $black-gray;
     font-size: 20px;
@@ -10,7 +54,6 @@ body {
     font-family: 'Roboto', sans-serif;
     /* background: linear-gradient(0deg, #103311, #144216, #3e3f3e); */
     .header-main {
-        width: 100%;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -73,45 +116,63 @@ body {
                 }
             }
         }
-    }
-}
-
-.emphasis-green {
-    color: $green-brand;
-}
-
-.btn {
-    display: block;
-    min-width: 20%;
-    border-radius: 30px;
-    padding: 8px 12px;
-    text-align: center;
-    background-color: $black-gray;
-    &:hover {
-        background-color: $black-green;
-    }
-    &:active {
-        background-color: $green-shine;
-        color: black !important;
-    }
-}
-
-.btn.btn-p {
-    background-color: $green-brand;
-    &:hover {
-        background-color: $black-green;
-    }
-    &:active {
-        background-color: $green-shine;
-        color: black !important;
+        .wraper {
+            padding: 30px 90px;
+            .title-section {
+                text-align: center;
+                margin-bottom: 45px;
+            }
+            .carousel {
+                margin: auto;
+                display: flex;
+                justify-content: space-around;
+                width: 80%;
+                .item-carousel {
+                    width: 30%;
+                    padding: 15px 20px;
+                    .poster {
+                        min-height: 120px;
+                        background-color: $black-red;
+                        border-radius: 30px;
+                        text-align: center;
+                        padding: 15px 20px 20px 20px;
+                        h2 {
+                            font-size: 24px;
+                            margin: 10px auto 20px auto;
+                            font-weight: 700;
+                        }
+                        p {
+                            width: 80%;
+                            margin: 0 auto;
+                            text-align: left;
+                        }
+                        svg {
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+        .callToAction {
+            header {
+                text-align: center;
+                p {
+                    font-size: 28px;
+                    margin-bottom: 25px;
+                }
+            }
+            .btn {
+                width: 40%;
+                margin: 0 auto;
+                padding: 15px;
+            }
+        }
     }
 }
 
 footer {
-    margin: 10px auto 0px auto;
-    width: 100%;
-    background: #eff1e5;
-    padding: 20px 20px;
+    background: $white-dialog;
+    padding: 20px 20px 40px 20px;
     text-align: center
 }
 
